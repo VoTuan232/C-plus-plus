@@ -1,0 +1,10 @@
+version: '3'
+services:
+    gcc-w3:
+        build: .
+        stdin_open: true # docker run -i
+        tty: true        # docker run -t
+        ports:
+            - "2222:2222"
+        volumes:
+            - .:/app
